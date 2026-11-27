@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ExportPremium Café Vulcânico</title>
 <meta name="description" content="ExportPremium Café Vulcânico. Excelência vulcânica da Ásia. Uma experiência sensorial para os amantes dos cafés raros. Edição especial Terras Vulcânicas — café especial de Sumatra e Sulawesi, produção 100% artesanal.">
-<meta name="theme-color" content="#0d0907">
+<meta name="theme-color" content="#0c191c">
 <meta property="og:title" content="ExportPremium Café Vulcânico">
 <meta property="og:site_name" content="ExportPremium Café Vulcânico">
 <meta property="og:description" content="Excelência vulcânica da Ásia. Uma experiência sensorial para os amantes dos cafés raros. Edição Ásia–Brasil — Sumatra e Sulawesi.">
@@ -15,10 +15,10 @@
 <meta name="twitter:description" content="Excelência vulcânica da Ásia. Uma experiência sensorial para os amantes dos cafés raros.">
 <meta name="twitter:image" content="assets/img/hero-1920.webp">
 <link rel="preload" href="assets/fonts/CormorantGaramond.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/hero-960.webp" imagesrcset="assets/img/hero-960.webp 960w, assets/img/hero-1920.webp 1920w" imagesizes="100vw">
+<link rel="preload" as="image" href="assets/img/hero-poster-16x9.webp">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d0907'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23d4b277' font-family='Georgia'%3ES%26S%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d0907'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%239CC5B4' font-family='Georgia'%3ES%26S%3C/text%3E%3C/svg%3E">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -51,23 +51,16 @@
 
 <main id="topo">
 <section class="hero" aria-label="ExportPremium Café Vulcânico">
-  <div class="hero-bg" data-parallax="0.16">
-    <picture>
-      <img src="assets/img/hero-1920.webp" srcset="assets/img/hero-960.webp 960w, assets/img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Xícara de café fumegante sobre pedra vulcânica, com portal de templo balinês e montanha ao amanhecer" fetchpriority="high" decoding="async">
-    </picture>
-  </div>
-  <div class="mist" aria-hidden="true"><b></b><b></b><b></b></div>
-  <canvas class="atm-rain" id="rain" aria-hidden="true"></canvas>
-  <div class="steam" aria-hidden="true"><span></span><span></span><span></span></div>
-  <div class="beans" aria-hidden="true">
-    <span class="bean-w" data-parallax="0.10" style="--x:78%;--y:18%;--s:38px;--dur:22s;--d:0s;--dx:18px;--dy:-36px;--r0:-12deg;--r1:18deg"><img src="assets/img/bean.webp" width="160" height="181" alt=""></span>
-    <span class="bean-w" data-parallax="0.18" style="--x:88%;--y:58%;--s:52px;--dur:26s;--d:-4s;--dx:-16px;--dy:-22px;--r0:20deg;--r1:48deg"><img src="assets/img/bean.webp" width="160" height="181" alt=""></span>
-    <span class="bean-w" data-parallax="0.07" style="--x:62%;--y:72%;--s:28px;--dur:19s;--d:-8s;--dx:10px;--dy:-28px;--r0:8deg;--r1:-20deg"><img src="assets/img/bean.webp" width="160" height="181" alt=""></span>
-    <span class="bean-w" data-parallax="0.22" style="--x:70%;--y:12%;--s:34px;--dur:24s;--d:-2s;--dx:12px;--dy:-40px;--r0:-30deg;--r1:-8deg"><img src="assets/img/bean.webp" width="160" height="181" alt=""></span>
-    <span class="bean-w" data-parallax="0.12" style="--x:92%;--y:36%;--s:22px;--dur:21s;--d:-6s;--dx:-10px;--dy:-24px;--r0:15deg;--r1:40deg"><img src="assets/img/bean.webp" width="160" height="181" alt=""></span>
+  <div class="hero-bg">
+    <video id="heroVid" autoplay muted loop playsinline webkit-playsinline disablepictureinpicture preload="auto" poster="assets/img/hero-poster-16x9.webp" aria-label="Café fumegante no portal ao vento"></video>
   </div>
   <div class="hero-shade" aria-hidden="true"></div>
-  <canvas class="steam-fx" id="steamFx" aria-hidden="true"></canvas>
+  <div class="beans" aria-hidden="true" id="beans">
+    <span class="bean-w far" style="--x:86%;--y:20%;--s:22px;--blur:2.6px;--op:.42;--dur:36s;--d:-2s;--dx:10px;--dy:-18px;--r0:-8deg;--r1:14deg"><img src="assets/img/grao-torrado.webp" width="200" height="189" alt=""></span>
+    <span class="bean-w mid" style="--x:78%;--y:62%;--s:34px;--blur:1.1px;--op:.72;--dur:30s;--d:-6s;--dx:-12px;--dy:-14px;--r0:16deg;--r1:38deg"><img src="assets/img/grao-torrado.webp" width="200" height="189" alt=""></span>
+    <span class="bean-w near" style="--x:90%;--y:48%;--s:48px;--blur:0.2px;--op:.9;--dur:26s;--d:0s;--dx:8px;--dy:-20px;--r0:-18deg;--r1:10deg"><img src="assets/img/grao-torrado.webp" width="200" height="189" alt=""></span>
+    <span class="bean-w mid" style="--x:70%;--y:28%;--s:26px;--blur:1.6px;--op:.55;--dur:32s;--d:-9s;--dx:14px;--dy:-10px;--r0:8deg;--r1:-16deg"><img src="assets/img/grao-torrado.webp" width="200" height="189" alt=""></span>
+  </div>
   <div class="wrap">
     <p class="eyebrow rv in" data-en="Sumatra &amp; Sulawesi · Asia–Brazil Edition">Sumatra &amp; Sulawesi · Edição Ásia–Brasil</p>
     <h1 id="h1" class="rv in d1" data-en="ExportPremium">ExportPremium</h1>
@@ -220,7 +213,11 @@
     <h2 data-en="Request the special edition.">Solicite a edição especial.</h2>
     <div class="rule"></div>
     <p class="body" data-en="Tell us who you are and what you have in mind. We reply personally.">Conte quem você é e o que tem em mente. Respondemos pessoalmente.</p>
-    <p class="email-row" id="emailRow" style="margin-top:2rem"><span class="eyebrow">E-mail</span><br><span id="cEmail"></span></p>
+    <div class="rep">
+      <p class="rep-name" data-en="Speak with Carla Patricia">Fale com a Carla Patricia</p>
+      <p class="rep-role" data-en="Exclusive representation in Brazil · CEO NEURALLOREE &amp; I.ARIAN">Representação exclusiva no Brasil · CEO NEURALLOREE &amp; I.ARIAN</p>
+    </div>
+    <p class="email-row" id="emailRow"><span class="eyebrow">E-mail</span><br><span id="cEmail"></span></p>
     <p id="waRow"><span class="eyebrow">WhatsApp</span><br><span id="cWa"></span></p>
   </div>
   <form class="rv d1" id="form" novalidate>
@@ -237,6 +234,7 @@
 </main>
 
 <footer><div class="wrap">
+  <p class="rep-foot" data-en="Exclusive representation in Brazil: Carla Patricia dos Santos">Representação exclusiva no Brasil: Carla Patricia dos Santos</p>
   <p class="copy">© 2026 ExportPremium Café Vulcânico</p>
   <p class="credit"><span data-en="Exclusive representation in Brazil:">Representação exclusiva no Brasil:</span><br>I.ARIAN Automação &amp; NEURALLOREE Filmes</p>
   <a class="back" id="back" href="https://i-arian-automacao-neuralloree-filmes.github.io/" data-en="Back to the I.ARIAN &amp; NEURALLOREE site">Voltar ao site I.ARIAN &amp; NEURALLOREE</a>
