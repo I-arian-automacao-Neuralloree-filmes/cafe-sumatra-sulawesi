@@ -1,11 +1,10 @@
 /* ============================================================
-   CONFIGURAÇÃO DE CONTATO — preencher aqui (único lugar)
-   Enquanto os valores abaixo começarem com "PREENCHER", o site
-   mostra o contato como "em breve" e o formulário avisa o visitante.
+   CONFIGURAÇÃO DE CONTATO — único lugar
+   Se email ou whatsapp começarem com "PREENCHER", ficam ocultos.
    ============================================================ */
 window.CAFE_CONFIG = {
-  email:     "PREENCHER_EMAIL@dominio.com",   // ex.: contato@suaempresa.com.br
-  whatsapp:  "PREENCHER_5579900000000",       // só dígitos, com DDI+DDD, ex.: 5579999999999
-  phoneLabel:"PREENCHER (79) 9 0000-0000",    // como aparece escrito na página
+  email:     "carlavereadoraajumecenas@gmail.com",
+  whatsapp:  "5579991988251",
+  phoneLabel:"(79) 99198-8251",
   parentSite:"https://i-arian-automacao-neuralloree-filmes.github.io/"
 };
