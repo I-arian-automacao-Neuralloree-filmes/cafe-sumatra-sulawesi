@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Café Sumatra &amp; Sulawesi Premium · Edição Terras Vulcânicas</title>
-<meta name="description" content="Uma experiência sensorial para os amantes dos cafés raros. Edição especial Terras Vulcânicas — Edição Ásia–Brasil. Café especial de Sumatra e Sulawesi, produção 100% artesanal.">
+<title>ExportPremium Café Vulcânico</title>
+<meta name="description" content="ExportPremium Café Vulcânico. Excelência vulcânica da Ásia. Uma experiência sensorial para os amantes dos cafés raros. Edição especial Terras Vulcânicas — café especial de Sumatra e Sulawesi, produção 100% artesanal.">
 <meta name="theme-color" content="#0d0907">
-<meta property="og:title" content="Café Sumatra & Sulawesi Premium · Edição Terras Vulcânicas">
-<meta property="og:description" content="Uma experiência sensorial para os amantes dos cafés raros. Edição Ásia–Brasil.">
+<meta property="og:title" content="ExportPremium Café Vulcânico">
+<meta property="og:site_name" content="ExportPremium Café Vulcânico">
+<meta property="og:description" content="Excelência vulcânica da Ásia. Uma experiência sensorial para os amantes dos cafés raros. Edição Ásia–Brasil — Sumatra e Sulawesi.">
 <meta property="og:image" content="assets/img/hero-1920.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ExportPremium Café Vulcânico">
+<meta name="twitter:description" content="Excelência vulcânica da Ásia. Uma experiência sensorial para os amantes dos cafés raros.">
+<meta name="twitter:image" content="assets/img/hero-1920.webp">
 <link rel="preload" href="assets/fonts/CormorantGaramond.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="assets/img/hero-960.webp" imagesrcset="assets/img/hero-960.webp 960w, assets/img/hero-1920.webp 1920w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
@@ -21,7 +26,7 @@
 <div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav" id="nav"><div class="wrap">
-  <a href="#topo" class="brand">Sumatra <b>&amp;</b> Sulawesi</a>
+  <a href="#topo" class="brand"><span class="brand-n">ExportPremium</span><span class="brand-s">Café Vulcânico</span></a>
   <nav class="menu" id="menu">
     <a href="#experiencia" data-en="Experience">Experiência</a>
     <a href="#terroir" data-en="Terroir">Terroir</a>
@@ -30,7 +35,7 @@
     <a href="#contato" data-en="Contact">Contato</a>
   </nav>
   <div class="tools">
-    <button type="button" class="snd show" id="snd" aria-pressed="false" data-en="♪ Ambient sound">♪ Som ambiente</button>
+    <button type="button" class="snd show" id="snd" aria-pressed="false" aria-label="Som ambiente" data-en-label="Ambient sound"><span class="snd-ico" aria-hidden="true">♪</span><span class="snd-txt" data-en="Ambient sound">Som ambiente</span></button>
     <div class="lang" role="group" aria-label="Idioma"><button data-l="pt" class="on">PT</button><button data-l="en">EN</button></div>
     <button class="burger" id="menuBtn" type="button" aria-expanded="false" aria-controls="overlay" aria-label="Abrir menu"><span></span><span></span><span></span></button>
   </div>
@@ -45,7 +50,7 @@
 </div>
 
 <main id="topo">
-<section class="hero" aria-label="Café Sumatra e Sulawesi Premium">
+<section class="hero" aria-label="ExportPremium Café Vulcânico">
   <div class="hero-bg" data-parallax="0.16">
     <picture>
       <img src="assets/img/hero-1920.webp" srcset="assets/img/hero-960.webp 960w, assets/img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Xícara de café fumegante sobre pedra vulcânica, com portal de templo balinês e montanha ao amanhecer" fetchpriority="high" decoding="async">
@@ -62,10 +67,12 @@
     <span class="bean-w" data-parallax="0.12" style="--x:92%;--y:36%;--s:22px;--dur:21s;--d:-6s;--dx:-10px;--dy:-24px;--r0:15deg;--r1:40deg"><img src="assets/img/bean.webp" width="160" height="181" alt=""></span>
   </div>
   <div class="hero-shade" aria-hidden="true"></div>
+  <canvas class="steam-fx" id="steamFx" aria-hidden="true"></canvas>
   <div class="wrap">
-    <p class="eyebrow rv in" data-en="Special edition · Asia–Brazil">Edição especial · Ásia–Brasil</p>
-    <h1 id="h1" class="rv in d1" data-en="Café <em>Sumatra &amp; Sulawesi</em> Premium">Café <em>Sumatra &amp; Sulawesi</em> Premium</h1>
-    <p class="lead rv in d2" data-en="A sensory experience for lovers of rare coffees. Volcanic Lands Edition.">Uma experiência sensorial para os amantes dos cafés raros. Edição Terras Vulcânicas.</p>
+    <p class="eyebrow rv in" data-en="Sumatra &amp; Sulawesi · Asia–Brazil Edition">Sumatra &amp; Sulawesi · Edição Ásia–Brasil</p>
+    <h1 id="h1" class="rv in d1" data-en="ExportPremium">ExportPremium</h1>
+    <p class="hero-sub rv in d1" data-en="Café Vulcânico">Café Vulcânico</p>
+    <p class="lead rv in d2" data-en="Volcanic excellence from Asia. A sensory experience for lovers of rare coffees. Volcanic Lands Edition.">Excelência vulcânica da Ásia. Uma experiência sensorial para os amantes dos cafés raros. Edição Terras Vulcânicas.</p>
     <div class="btns rv in d3">
       <a href="#contato" class="btn solid magnet" data-en="Request special edition">Solicitar edição especial</a>
       <a href="#terroir" class="btn magnet" data-en="Discover the origin">Conhecer a origem</a>
@@ -84,7 +91,7 @@
       <p class="lead" data-en="Born on volcanic soils of Indonesia and made by artisanal hands, brought to Brazil in a limited special edition.">Nascido em solos vulcânicos da Indonésia e feito por mãos artesanais, chega ao Brasil em uma edição especial e limitada.</p>
     </div>
     <div class="rv d1">
-      <p class="body" data-en="Café Sumatra &amp; Sulawesi Premium brings together two of Indonesia’s most celebrated origins in a single proposal: depth, character and an aroma that speaks of the land it comes from. Production is 100% artisanal, in small lots and at the pace the coffee asks for.">O Café Sumatra &amp; Sulawesi Premium reúne duas das origens mais celebradas da Indonésia em uma única proposta: profundidade, personalidade e um aroma que fala da terra de onde vem. A produção é 100% artesanal, em pequenos lotes e no ritmo que o café pede.</p>
+      <p class="body" data-en="ExportPremium Café Vulcânico brings together two of Indonesia’s most celebrated origins, Sumatra and Sulawesi, in a single proposal: depth, character and an aroma that speaks of the land it comes from. Production is 100% artisanal, in small lots and at the pace the coffee asks for.">O ExportPremium Café Vulcânico reúne duas das origens mais celebradas da Indonésia, Sumatra e Sulawesi, em uma única proposta: profundidade, personalidade e um aroma que fala da terra de onde vem. A produção é 100% artesanal, em pequenos lotes e no ritmo que o café pede.</p>
       <p class="body" style="margin-top:1.2rem" data-en="A selection for those who prefer to sip less and perceive more.">Uma seleção para quem prefere beber menos e perceber mais.</p>
     </div>
   </div>
@@ -192,14 +199,14 @@
   <p class="eyebrow" data-en="Exclusive representation in Brazil">Representação exclusiva no Brasil</p>
   <h2 data-en="Direct line to the origin.">Uma linha direta com a origem.</h2>
   <div class="rule" style="margin-inline:auto"></div>
-  <p class="body" data-en="The Café Sumatra &amp; Sulawesi Premium special edition reaches Brazil through I.ARIAN Automação &amp; NEURALLOREE Filmes, exclusive representatives, in partnership with a trading company based in Bali, which works close to producers in Indonesia and keeps the supplier relationship transparent from the first message to shipment.">A edição especial Café Sumatra &amp; Sulawesi Premium chega ao Brasil por meio da I.ARIAN Automação &amp; NEURALLOREE Filmes, representantes exclusivas, em parceria com uma trading sediada em Bali, que atua junto a produtores na Indonésia e mantém a relação com os fornecedores transparente, da primeira mensagem ao embarque.</p>
+  <p class="body" data-en="The ExportPremium Café Vulcânico special edition, from Sumatra and Sulawesi, reaches Brazil through I.ARIAN Automação &amp; NEURALLOREE Filmes, exclusive representatives, in partnership with a trading company based in Bali, which works close to producers in Indonesia and keeps the supplier relationship transparent from the first message to shipment.">A edição especial ExportPremium Café Vulcânico, de Sumatra e Sulawesi, chega ao Brasil por meio da I.ARIAN Automação &amp; NEURALLOREE Filmes, representantes exclusivas, em parceria com uma trading sediada em Bali, que atua junto a produtores na Indonésia e mantém a relação com os fornecedores transparente, da primeira mensagem ao embarque.</p>
   <div class="btns" style="justify-content:center"><a href="#contato" class="btn magnet" data-en="Become a partner">Seja um parceiro</a></div>
 </div></div></section>
 
 <section id="faq"><div class="wrap faq">
   <div class="rv"><p class="eyebrow">FAQ</p><h2 data-en="Common questions">Perguntas frequentes</h2><div class="rule"></div></div>
   <div class="rv">
-    <details><summary data-en="What exactly is this coffee?">O que é, exatamente, este café?</summary><p data-en="A specialty coffee from Sumatra and Sulawesi, Indonesia, in a special, limited Asia–Brazil edition with artisanal production.">Um café especial de Sumatra e Sulawesi, na Indonésia, em edição especial e limitada Ásia–Brasil, com produção artesanal.</p></details>
+    <details><summary data-en="What exactly is this coffee?">O que é, exatamente, este café?</summary><p data-en="ExportPremium Café Vulcânico is a specialty coffee from Sumatra and Sulawesi, Indonesia, in a special, limited Asia–Brazil edition with artisanal production.">O ExportPremium Café Vulcânico é um café especial de Sumatra e Sulawesi, na Indonésia, em edição especial e limitada Ásia–Brasil, com produção artesanal.</p></details>
     <details><summary data-en="Is it available now? In what format?">Está disponível agora? Em que formato?</summary><p data-en="Availability and format (roasted bean or ground) are confirmed on request. Send us your interest and we will reply with what is possible.">A disponibilidade e o formato (grão torrado ou moído) são confirmados sob consulta. Envie seu interesse e responderemos com o que é possível.</p></details>
     <details><summary data-en="Do you work with restaurants, hotels and shops?">Atendem restaurantes, hotéis e lojas?</summary><p data-en="Yes, partnerships are welcome. Use “Become a partner” and tell us about your business.">Sim, parcerias são bem-vindas. Use “Seja um parceiro” e conte sobre o seu negócio.</p></details>
     <details><summary data-en="What does the flavor profile look like?">Como é o perfil de sabor?</summary><p data-en="Typical profiles of these regions combine full body, soft acidity, cocoa, spice and earthy notes. Each lot and roast has its own nuances.">Os perfis típicos dessas regiões combinam corpo cheio, acidez suave, cacau, especiarias e notas terrosas. Cada lote e cada torra têm suas nuances.</p></details>
@@ -230,6 +237,7 @@
 </main>
 
 <footer><div class="wrap">
+  <p class="copy">© 2026 ExportPremium Café Vulcânico</p>
   <p class="credit"><span data-en="Exclusive representation in Brazil:">Representação exclusiva no Brasil:</span><br>I.ARIAN Automação &amp; NEURALLOREE Filmes</p>
   <a class="back" id="back" href="https://i-arian-automacao-neuralloree-filmes.github.io/" data-en="Back to the I.ARIAN &amp; NEURALLOREE site">Voltar ao site I.ARIAN &amp; NEURALLOREE</a>
   <p class="snd-credit" data-en="Ambient sound: &quot;Bali Xylophone 2&quot; — thedialogueproject via Pixabay (Pixabay Content License)">Som ambiente: “Bali Xylophone 2” — thedialogueproject via Pixabay (Pixabay Content License)</p>
